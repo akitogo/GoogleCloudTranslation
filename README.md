@@ -68,7 +68,7 @@ component{
 		var t=ggl.detect('Italy, Tuscany, View out of window to the garden of land house.');
 		writeDump(t);
 
-		var t=ggl.detect('Idies ist ein kurzer deutscher Text');
+		var t=ggl.detect('Dies ist ein kurzer deutscher Text');
 		writeDump(t);		
 	}
 }
