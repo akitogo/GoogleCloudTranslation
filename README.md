@@ -3,6 +3,9 @@ Implements Google Cloud Translation Api for Coldbox Coldfusion
 See https://cloud.google.com/translate/
 as well https://cloud.google.com/translate/docs/
 
+The API supports two authentication methods: API Key or oAuth2
+Currently API Key only is supported
+
 ## Installation 
 You will need a Google Account to work with this API
 As well you need to set up Google Cloud APIs
