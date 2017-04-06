@@ -64,7 +64,6 @@ component{
 		// returns translated text as string
 		var t=ggl.translate('Italy, Tuscany, View out of window to the garden of land house','en','de');
 		writeDump(t);
-		abort;
 		
 		// detects language of a text
 		// returns a struct with three values
@@ -73,6 +72,8 @@ component{
 
 		var t=ggl.detect('Dies ist ein kurzer deutscher Text');
 		writeDump(t);		
+
+		abort;
 	}
 }
 ```
