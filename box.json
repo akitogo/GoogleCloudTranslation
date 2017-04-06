@@ -1,0 +1,88 @@
+{
+    "name":"GoogleCloudTranslation",
+    "version":"1.0.0",
+    "author":"Aktiogo Team",
+    "location":"https://github.com/akitogo/GoogleCloudTranslation/archive/master.zip",
+    "directory":"",
+    "createPackageDirectory":true,
+    "packageDirectory":"",
+    "homepage":"https://github.com/akitogo/GoogleCloudTranslation",
+    "documentation":"",
+    "repository":{
+        "type":"GIT",
+        "URL":"https://github.com/akitogo/GoogleCloudTranslation.git"
+    },
+    "bugs":"",
+    "slug":"GoogleCloudTranslation",
+    "shortDescription":"Implements Google Cloud Translation Api",
+    "description":"",
+    "instructions":"",
+    "changelog":"",
+    "type":"modules",
+    "keywords":"Google,Translation,API",
+    "private":false,
+    "engines":[
+        {
+            "type":"",
+            "version":""
+        }
+    ],
+    "defaultEngine":"",
+    "defaultPort":0,
+    "projectURL":"",
+    "license":[
+        {
+            "type":"",
+            "URL":""
+        }
+    ],
+    "contributors":[
+        
+    ],
+    "dependencies":{
+        
+    },
+    "devDependencies":{
+        
+    },
+    "installPaths":{
+        
+    },
+    "scripts":{
+        
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ],
+    "testbox":{
+        "runner":[
+            {
+                "default":""
+            }
+        ],
+        "labels":[
+            
+        ],
+        "reporter":"",
+        "reporterResults":"",
+        "bundles":[
+            ""
+        ],
+        "directory":{
+            "mapping":"",
+            "recurse":true
+        },
+        "watchers":[
+            
+        ],
+        "notify":{
+            "emails":[
+                
+            ],
+            "growl":"",
+            "URL":""
+        }
+    }
+}
