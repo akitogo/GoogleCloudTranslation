@@ -113,13 +113,14 @@ component {
 	* Fired when the module is registered and activated.
 	*/
 	function onLoad(){
-		parseParentSettings();
-		var GoogleSettings = controller.getConfigSettings().GoogleSettings;
-		
+		var GoogleApiKey = controller.getSetting( "GoogleApiKey",false,'' );
+		if(GoogleApiKey eq '')
+			throw(message="The GoogleApiKey may not be empty", detail="Please set it in your /config/Coldbox.cfc config file"); 
+
 		// Map GoogleCloudTranslation
 		binder.map( "GoogleTranslation@GoogleCloudTranslation" )
 			.to( "#moduleMapping#.models.GoogleTranslation" )
-			.initArg( name="apiKey", 			value=GoogleSettings.GoogleApiKey );
+			.initArg( name="apiKey", 			value=GoogleApiKey );
 
 	}
 
@@ -129,19 +130,5 @@ component {
 	function onUnload(){
 
 	}
-	/**
-	* parse parent settings
-	*/
-	private function parseParentSettings(){
-		var oConfig 		= controller.getSetting( "ColdBoxConfig" );
-		var configStruct 	= controller.getConfigSettings();
-		var gcsDSL 			= oConfig.getPropertyMixin( "GoogleSettings", "variables", structnew() );
-
-		//defaults
-		configStruct.GoogleSettings = variables.settings;
-
-		// incorporate settings
-		structAppend( configStruct.GoogleSettings, gcsDSL, true );
-	}	
 
 }

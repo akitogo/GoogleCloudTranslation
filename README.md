@@ -30,13 +30,17 @@ This API will be installed into a directory called `GoogleCloudTranslation` and 
 
 ### ColdBox Module
 
-This package also is a ColdBox module as well.  The module can be configured by creating an `GoogleSettings` configuration structure in your application configuration file: `config/Coldbox.cfc` with the following settings:
+This package also is a ColdBox module as well.  The module can be configured by adding `GoogleApiKey` in your application configuration file: `config/Coldbox.cfc` with the following settings:
 
 ```
-	// Your Google API Key
-	GoogleApiKey = "",
-};
-```
+	settings = {
+
+		// Your Google API Key
+		GoogleApiKey = "",
+		
+		// Your settings....
+
+	};
 
 Then you can leverage the API CFC via the injection DSL: `GoogleTranslation@GoogleCloudTranslation`
 

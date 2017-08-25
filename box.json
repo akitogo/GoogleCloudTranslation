@@ -1,6 +1,6 @@
 {
     "name":"GoogleCloudTranslation",
-    "version":"1.0.0",
+    "version":"1.0.1",
     "author":"Aktiogo Team",
     "location":"https://github.com/akitogo/GoogleCloudTranslation/archive/master.zip",
     "directory":"",
@@ -32,8 +32,8 @@
     "projectURL":"",
     "license":[
         {
-            "type":"",
-            "URL":""
+            "type":"Apache2",
+            "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
         }
     ],
     "contributors":[
