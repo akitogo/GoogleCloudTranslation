@@ -1,12 +1,16 @@
 # GoogleCloudTranslation
+
 Implements Google Cloud Translation Api for Coldbox Coldfusion
 See https://cloud.google.com/translate/
 as well https://cloud.google.com/translate/docs/
+
+You might want to try instead of this Api the Deepl Api which delivers much better results https://github.com/akitogo/cbDeepl
 
 The API supports two authentication methods: API Key or oAuth2
 Currently API Key only is supported
 
 ## Installation 
+
 You will need a Google Account to work with this API
 As well you need to set up Google Cloud APIs
 See here: https://cloud.google.com/translate/docs/getting-started
@@ -22,7 +26,7 @@ Then follow either the standalone or module instructions below.
 
 ### Standalone
 
-This API will be installed into a directory called `GoogleCloudTranslation` and then the API can be instantiated via ` new GoogleCloudStoreage.models.GoogleCloudTranslation()` with the following constructor arguments:
+This API will be installed into a directory called `GoogleCloudTranslation` and then the API can be instantiated via ` new GoogleCloudTranslation.models.GoogleCloudTranslation()` with the following constructor arguments:
 
 ```
 <cfargument name="apiKey" 			required="true">
@@ -41,7 +45,7 @@ This package also is a ColdBox module as well.  The module can be configured by 
 		// Your settings....
 
 	};
-
+```
 Then you can leverage the API CFC via the injection DSL: `GoogleTranslation@GoogleCloudTranslation`
 
 ## Usage
